@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicholas Chow - What A Guy</title>
+  <!-- Place favicon.ico in the root directory -->
+
+	<!--<link rel="stylesheet" href="index.css">-->
+{% load static %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <link rel = "stylesheet" href = "{% static 'css/nav.css' %}">
+
+  <meta name="theme-color" content="#fafafa">
+
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="..">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn" onclick='location.href="portfolio"'>Portfolio 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="searchengine">ICS Search Engine</a>
+    </div>
+  </div> 
+  <a href="tutorials">Tutorials</a>
+  <a href="contact">Contact</a>
+  <a href ="about" >About</a>
+</div>
+<div class="box blue"> </div>
+  <div class = "mainBody">
+    <div class = "intro" align = 'center'>
+      Hello, my name is Nicholas Chow. This website is a portfolio of my personal, academic projects, as well as other interests of mine.
+      <br>
+      <img class = "circImg" src="{% static '/images/index/profile_pic.jpg' %}">
+    </div>
+
+    <div class = "blurb">
+      <p>
+        <h2 align='center' style="background-color: #2f6a6b">Computer Science</h2>
+      &nbsp&nbspMy interest in Computer Science first began at the age of 13. Most of my exposure to the
+      field was in the form of video game modding
+      and hardware modifications for video game consoles. While in high school, I explored video game development
+      with Unity and taught myself Java. Following my high school graduation, I started my college experience at UC Merced and ended it at UC Irvine.
+      Through these schools I have taken courses in Data Structures, Algorithms, Operating Systems, Information Retrieval, Project in Web Applications (Full Stack),
+      Computer and Network Security, as well as Database Management. I have explored many different languages and technologies within Computer Science as described below.
+      </p>
+
+      <p>
+      <h3 align ='center' style="background-color: darkolivegreen;">Skills and Technologies</h3>
+      <h4 align="center">Fluent In </h4>
+      <div class="skills">Java, Python, C++, SQL, HTML, CSS and JavaScript.</div>
+      <h4 align="center">Experience With</h4>
+      <div class="skills">C, C#, NoSQL</div>
+      <h4 align ="center">Software</h4>
+      <div class ="skills">IntelliJ, Visual Studio, Linux, MySQL, MongoDB, WebStorm, Git</div>
+      <h4 align = "center">Frameworks/Architectural Styles</h4>
+      <div class = "skills">REST, Django, Grizzly</div>
+      </p>
+
+      <p>
+        <h2 align ='center' style = "background-color: #2f6a6b">Cars</h2>
+        I'm really into classic cars, specifically wedge shaped cars. A lot of my downtime is spent working on my 1986 Nissan 300ZX Z31.
+        On this website, you may find various blurbs, tutorials, and/or pictures in regards to my car.
+        <br>
+      <div align = "center">
+          <img class = "carImg" src="{% static '/images/index/nissan_300zx.jpg' %}">
+      </div>
+      </p>
+      <p>
+        <h2 align = 'center' style="background-color: #2f6a6b;">Detailing</h2>
+        Part of my love for cars spawns from my meticulous attitude towards car paint. I detail cars as both a hobby and job.
+      <br>
+      I offer services for the following:  paint correction, headlight restoration, interior cleaning, and exterior cleaning.
+      <div class = "detailingPhotos" align="center">
+        <img class = "detailing" src="{% static '/images/index/detailing.jpg' %}">
+        <img class = "detailing" src = "{% static '/images/index/detailing_before_after.jpg' %}">
+      </div>
+      </p>
+    </div>
+  </div>
+  <!--[if IE]>
+  <![endif]-->
+  <!-- Add your site or application content here -->
+
+</body>
+
+</html>

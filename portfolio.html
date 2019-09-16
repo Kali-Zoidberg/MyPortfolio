@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	{% load static %}
+    <link rel = "stylesheet" href ="{% static '/css/portfolio.css' %}">
+    <link rel ="stylesheet" href ="{% static '/css/nav.css' %}">
+    <title>Portfolio</title>
+</head>
+
+<body>
+<div class="navbar">
+  <a href="..">Home</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn" onclick='location.href="portfolio"'>Portfolio 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="searchengine">ICS Search Engine</a>
+    </div>
+  </div> 
+  <a href="tutorials">Tutorials</a>
+  <a href="contact">Contact</a>
+  <a href ="about" >About</a>
+</div>
+
+    <div class ="text">
+        <h2 align="center"><u>Personal Projects</u></h2>
+
+        <div class = "clickable">
+            <div class = "row">
+                <div class ="column">
+					<div class = "proj-title">JEngine</div>
+                    <div class = "container">
+                        <a href = "https://github.com/Kali-Zoidberg/Java-Engine">
+                        <img src = "{% static '/images/portfolio/jengine_collisions.gif' %}" width="420" height="420">
+                        </a>
+                        <div class = "overlay">
+                            <div class = "otext">
+                                JEngine is a 2D Game Engine that features Separating Axis Theorem, Dynamic Audio Line Scaling and Component Based Architecture.
+								<button class = "proj" onclick="location.href = 'https://github.com/Kali-Zoidberg/Java-Engine';">Visit Source Code</button>
+                            </div>
+                        </div>
+                    </div>
+					
+            </div>
+			<div class = "column">
+				<div class = "proj-title">Jogel</div>
+						<div class = "container">
+							<a href = "https://github.com/Kali-Zoidberg/Jogel-Viewer">
+							<img src = "{% static '/images/portfolio/jogel.jpg' %}" width="420" height="420">
+							</a>
+							<div class = "overlay">
+								<div class = "otext">
+								Jogel was a "hackathon" like project. Having developed the program in three days whilst learning how to program using OpenGL, I was able to create a model rendering program.
+								<button class = "proj" onclick="location.href = 'https://github.com/Kali-Zoidberg/Jogel-Viewer';">Visit Source Code</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+			<div class = "column">
+				<div class = "proj-title">MacroMaker</div>
+						<div class = "container">
+							<img src = "{% static '/images/portfolio/macromaker.png' %}" width="420" height="420">
+							</a>
+							<div class = "overlay">
+								<div class = "otext">
+								MacroMaker stores and synthesizes a user's input to allow for easy creation of macros. The program was developed in C++ and uses .NET framework.
+								<button class = "proj" onclick="location.href = 'https://github.com/Kali-Zoidberg/MacroMaker';">Visit Source Code</button>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+        </div>
+
+        <h2 align = "center"><u>Academic Projects</u></h2>
+
+        <div class = "clickable">
+            <div class = "row">
+                <div class ="column">
+				
+				<div class = "proj-title">FabFlix (Android)</div>
+
+                    <div class = "container">
+                        <iframe width = "420" height = "420" src = "https://www.youtube.com/embed/wXxZwHxVkzs">
+                        </iframe>
+                        <div class = "overlay">
+
+                            <div class = "otext">
+                                <a href = "https://youtu.be/wXxZwHxVkzs"> FabFlix is a Movie Billing Service similiar to Netflix/Amazon where you may browse and purchase movie titles. This video demonstrates the Android application of FabFlix</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class = "column">
+					<div class = "proj-title">Mini Operating System</div>
+                    <div class = "container">
+                        <iframe width="420" height="420" src="https://www.youtube.com/embed/5mNsKZ2D6Ms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class = "overlay">
+                            <div class = "otext">
+                                141OS is a mini operating system that simulates file reading and writing. There is a 'fun-mode' which drives the creation of files via predefined inputs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <div class = "column">
+					<div class = "proj-title">ICS Domain Search Engine</div>
+                    <div class = "container">
+						<img src = "{% static '/images/portfolio/search_engine.png' %}" width="420" height="420">
+                        <div class = "overlay">
+                            <div class = "otext">
+                                This project is the culmination of the Informational Retrieval course at UCI. Tackling the projects individually, I went above and beyond by creating a web application using Django and MongoDB. The website is hosted on AWS and be accessed below.
+								<button class = "proj" onclick="location.href = 'https://www.nicholaschow.me';">Visit Project</button>
+
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If it's just two, need some sort of centering and padding adjustments-->
+            <div class = "row">
+                <div class = "column">
+
+                </div>
+                <div class = "column">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

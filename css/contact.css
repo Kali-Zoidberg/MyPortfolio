@@ -1,0 +1,21 @@
+
+body
+{
+    margin: 0;
+    background-color: #333333;
+}
+.form-button
+{
+    float: right;
+}
+textarea[name="message"]
+{
+    height: 300px;
+    width: 400px;
+}
+.contact
+{
+    padding-top: 5%;
+    padding-left: 45%;
+    padding-right: 45%;
+}
