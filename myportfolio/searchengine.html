@@ -1,0 +1,32 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+{% load static %}
+<script src = "{% static '/index.js' %}" type="text/javascript" defer="defer"></script>
+
+<!--<link rel="stylesheet" href="index.css">-->
+
+<link rel="stylesheet" href="{% static 'css/searchengine.css' %}">
+
+	<head>
+		<title>
+		CS 122B Search Engine 
+		</title>
+	</head>
+	<body>
+	<div class = "mainBody">
+	<h1 align="center" class = 'app-title'>ICSearch Engine</h1>
+	<h4 align = "center"> Designed by Nicholas Chow</h4>
+		<div align = "center">UCI Information of Computer Science Domain Search Engine </div>
+	<br>
+	<form name = "query-form" align="center">
+		<input type="text" class = "queryTextBox" placeholder = "Search...">
+		<button name = "btn-search" class = 'btn-search' type="submit" value="submit">Go!</button>
+	</form>
+	<div id = "search-results">
+	</div>
+	
+	<div id = "no-results">
+	</div>
+	</div>
+	</body>
+</html>
