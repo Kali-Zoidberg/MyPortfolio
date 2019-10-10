@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   <link rel ="stylesheet" href ="css/nav.css">
   <link rel = "stylesheet" href = "css/index.css">
   <meta name="theme-color" content="#fafafa">
@@ -62,11 +63,14 @@
 
 	<div class = "container-fluid">
 		<div class = "row">
-				<div class = "col-md-1" style ="background-color:#C15151;">
-				 <div class="affix">
-				Linked in and stuff
+			<div class = "socialCol">
+				<div class = "col-md-1" style = "padding: 0">
+				 <div class="affix" style = "height: 100%; 	background-image: linear-gradient(to right, black, #403f40); color: white">
+					<div class = "inline">
+						<button class = "button-transparent" id = "githubButton"> <img src = "images/index/social/GitHub-Mark-64px.png"></button>
+					</div>
 				</div>
-				</div>
+			</div>
 			<div class = "col-md-11">
 			
 			  <div class = "mainBody">
@@ -83,49 +87,180 @@
 				  </div>  
 					<div class = "myRow">
 						
-						<div class = "col-sm-3">
+						<div class = "col-md-3">
 							<img class = "circImg" src="images/index/profile_pic.jpg">
 
 						</div>
-						<div class = "col-sm-6">
+						<div class = "col-md-6">
 							<div class = "aboutTxt">
 						My interest in Computer Science first began at the age of 13. Most of my exposure to the field was in the form of video game modding and hardware modifications for video game consoles. While in high school, I explored video game development with Unity and taught myself Java. Following my high school graduation, I started my college experience at UC Merced and ended it at UC Irvine. Through these schools I have taken courses in Data Structures, Algorithms, Operating Systems, Information Retrieval, Project in Web Applications (Full Stack), Computer and Network Security, as well as Database Management. I have explored many different languages and technologies within Computer Science as described below. 			  </div>
 
 						</div>
-					<div class = "col-sm-3">
+					<div class = "col-md-3">
 					</div>
 					</div>
 
-					<div class = "blurb">
 
-					  <p>
 
 						<div class = "alternateColor">
 							<div class = "row">
-								<div class = "col-4">
+								<div class = "col-md-4">
 								</div>
-								<div class = "col-4">
+								<div class = "col-md-4">
 									<div class = "indexTitle">
 									
 									<u>Skills</u>
 									</div>
 									
 								</div>
-								<div class = "col-4">
+								<div class = "col-md-4">
 								</div>
 						</div>
-					
-						  <h4 align="center">Fluent In </h4>
-						  <div class="skills"><b>Java, Python, C++, SQL, HTML, CSS and JavaScript.</b></div>
-						  <h4 align="center">Experience With</h4>
-						  <div class="skills"> <b>C, C#, NoSQL</b></div>
-						  <h4 align ="center">Software</h4>
-						  <div class ="skills">IntelliJ, Visual Studio, Linux, MySQL, MongoDB, WebStorm, Git</div>
-						  <h4 align = "center">Frameworks/Architectural Styles</h4>
-						  <div class = "skills">REST, Django, Grizzly</div>
-						  </p>
+							<div class = "myRow">
+								<div class = "col-12">
+							  <h4 align="center">Fluent In </h4>
+							I love Java.
+							  <div class="skills">
+							  <div class = "row">
+								<div class = "topSkills">
+								<div class = "col-sm-2"><u>Java</u><span class="badge" id ="yearExp">6+ years</span></div><div class = "col-sm-2"><u>Python</u> <span class="badge" id ="yearExp">2+ years</span></div> <div class = "col-sm-2"><u>C++</u><span class="badge" id ="yearExp">4+ years</span></div>
+								<div class = "col-sm-2"><u> HTML/CSS</u><span class="badge" id ="yearExp">2+ years</span></div>								
+								<div class = "col-sm-2"><u>JavaScript</u><span class="badge" id ="yearExp">1+ years</span></div> 
+								<div class = "col-sm-2"><u>SQL</u><span class="badge" id ="yearExp">2+ years</span></div> 
+								</div>
+								</div>
+							  </div>
+							  <h4 align="center">Experience With</h4>
+							  <div class="skills"> <b>C, C#, NoSQL</b></div>
+							  <h4 align ="center">Software</h4>
+							  <div class ="skills">IntelliJ, Visual Studio, Linux, MySQL, MongoDB, WebStorm, Git</div>
+							  <h4 align = "center">Frameworks/Architectural Styles</h4>
+							  <div class = "skills">REST, Django, Grizzly</div>
+							</div>
+							</div>
 						</div>
-					  <p>
+						 <div class = "row">
+							  <div class ="col-md-4">
+							  </div>
+							  <div class = "col-md-4">
+							  <div class = "indexTitle">
+									<u>Personal Projects</u>
+								
+								</div>
+							  </div>
+								<div class = "col-md-4">
+							  </div>
+							  </div>  
+							  	<br>
+						<div class = "myRow" id = "project">
+							<div class = "col-sm-4">
+						
+								<div class = "proj-title">JEngine</div>
+								<div class = "projectContainer">
+									<div class = "portImg">
+										<img src = "images/portfolio/jengine_collisions.gif">
+										  <div class = "overlay">
+											<div class = "otext">
+												JEngine is a 2D Game Engine that features Separating Axis Theorem, Dynamic Audio Line Scaling and Component Based Architecture.
+												<br><button class = "proj" onclick="location.href = 'https://github.com/Kali-Zoidberg/Java-Engine';">Visit Source Code</button>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							
+							<div class = "col-sm-4">
+								<div class = "proj-title">Jogel</div>
+								<div class = "projectContainer">
+									<div class = "portImg">
+										<img class = "image" src = "images/portfolio/jogel.jpg" id = "portImg">
+										<div class = "overlay">
+											<div class = "otext">
+											Jogel was a "hackathon" like project. Having developed the program in three days whilst learning how to program using OpenGL, I was able to create a model rendering program.
+											<br><button class = "proj" onclick="location.href = 'https://github.com/Kali-Zoidberg/Jogel-Viewer';">Visit Source Code</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class = "col-sm-4">
+								<div class = "proj-title">MacroMaker</div>
+								<div class = "projectContainer">
+									<div class = "portImg">
+										<img src = "images/portfolio/macromaker.png" class = "image" id = "portImg">
+										<div class = "overlay">
+											<div class = "otext">
+											MacroMaker stores and synthesizes a user's input to allow for easy creation of macros. The program was developed in C++ and uses .NET framework.
+											<br><button class = "proj" onclick="location.href = 'https://github.com/Kali-Zoidberg/MacroMaker';">Visit Source Code</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class = "row">
+							  <div class ="col-md-4">
+							  </div>
+							  <div class = "col-md-4">
+							  <div class = "indexTitle">
+									<u>Academic Projects</u>
+								</div>
+							  </div>
+								<div class = "col-md-4">
+							  </div>
+							  </div>  
+							  <br>
+					<div class = "myRow">
+			
+						<div class = "col-sm-4">
+								<div class = "proj-title">FabFlix (Android)</div>
+								<div class = "projectContainer">
+									<div class = "portImg">
+										<img src = "images/portfolio/fabflix_android.png" class = "image" id = "portImg">
+										<div class = "overlay">
+											<div class = "otext">
+												FabFlix is a Movie Billing Service similiar to Netflix/Amazon where you may browse and purchase movie titles. This video demonstrates the Android application of FabFlix
+												<br><button class = "proj" onclick="location.href = 'https://www.youtube.com/embed/wXxZwHxVkzs;">Watch Demo</button>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+							
+							<div class = "col-sm-4">
+								<div class = "proj-title">Mini Operating System</div>
+								<div class = "projectContainer">
+									<div class = "portImg">
+										<img src = "images/portfolio/mini_os.png" class = "image" id = "portImg">
+										<div class = "overlay">
+											<div class = "otext">
+											141OS is a mini operating system that simulates file reading and writing. There is a 'fun-mode' which drives the creation of files via predefined inputs.
+											<br><button class = "proj" onclick="location.href = 'https://www.youtube.com/watch?v=5mNsKZ2D6Ms">Watch Demo</button>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							
+							<div class = "col-sm-4">
+								<div class = "proj-title">ICS Domain Search Engine</div>
+								<div class = "projectContainer">
+									<div class = "portImg">
+										<img src = "images/portfolio/search_engine.png" width="420" height="420">
+										<div class = "overlay">
+											<div class = "otext">
+											This project is the culmination of the Informational Retrieval course at UCI. Tackling the projects individually, I went above and beyond by creating a web application using Django and MongoDB. The website is hosted on AWS and be accessed below.
+											<br><button class = "proj" onclick="location.href = 'https://www.nicholaschow.me';">Interactive Demo</button>
+
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+					</div>
+					  <!--<p>
 					  <!--
 						<h2 align ='center' style = "background-color: #F9E08D">Cars</h2>
 						<div class ="carText">
@@ -150,131 +285,15 @@
 					  </div>
 					  </p>
 					</div> -->
-				</div> 
+				
 			</div>
 		
 		  </div>
+		  
 	 </div>
-	      <div class = "clickable">
-            <div class = "row">
-                <div class ="col-md-4">
-					<div class = "proj-title">JEngine</div>
-                    <div class = "container">
-                        <a href = "https://github.com/Kali-Zoidberg/Java-Engine">
-						<div class = "portImg">
-						<img src = "images/portfolio/jengine_collisions.gif">
-                        </a>
-                        <div class = "overlay">
-                            <div class = "otext">
-                                JEngine is a 2D Game Engine that features Separating Axis Theorem, Dynamic Audio Line Scaling and Component Based Architecture.
-								<br><button class = "proj" onclick="location.href = 'https://github.com/Kali-Zoidberg/Java-Engine';">Visit Source Code</button>
-                            </div>
-                        </div>
-						</div>
-
-                    </div>
-					
-            </div>
-			<div class = "col-md-4">
-				<div class = "proj-title">Jogel</div>
-						<div class = "container">
-							<a href = "https://github.com/Kali-Zoidberg/Jogel-Viewer">
-							<div class = "portImg">
-							<img class = "image" src = "images/portfolio/jogel.jpg" id = "portImg">
-							</a>
-							<div class = "overlay">
-								<div class = "otext">
-								Jogel was a "hackathon" like project. Having developed the program in three days whilst learning how to program using OpenGL, I was able to create a model rendering program.
-								<br><button class = "proj" onclick="location.href = 'https://github.com/Kali-Zoidberg/Jogel-Viewer';">Visit Source Code</button>
-								</div>
-							</div>
-						</div>
-						</div>
-
-					</div>
-					
-			<div class = "col-md-4">
-				<div class = "proj-title">MacroMaker</div>
-						<div class = "container">
-							<div class = "portImg">
-							<img src = "images/portfolio/macromaker.png" class = "image" id = "portImg">
-							<div class = "overlay">
-								<div class = "otext">
-								MacroMaker stores and synthesizes a user's input to allow for easy creation of macros. The program was developed in C++ and uses .NET framework.
-								<button class = "proj" onclick="location.href = 'https://github.com/Kali-Zoidberg/MacroMaker';">Visit Source Code</button>
-								</div>
-							</div>
-						</div>
-						</div>
-						
-					</div>
-                </div>
-        </div>
-
-        <h2 align = "center"><u>Academic Projects</u></h2>
-
-        <div class = "clickable">
-            <div class = "row">
-                <div class ="col-md-4">
-				
-				<div class = "proj-title">FabFlix (Android)</div>
-
-                    <div class = "container">
-						<div class = "portImg">
-							<img src = "images/portfolio/fabflix_android.png" class = "image" id = "portImg">
-                        <div class = "overlay">
-                            <div class = "otext">
-                               FabFlix is a Movie Billing Service similiar to Netflix/Amazon where you may browse and purchase movie titles. This video demonstrates the Android application of FabFlix
-							   <br><button class = "proj" onclick="location.href = 'https://www.youtube.com/embed/wXxZwHxVkzs;">Watch Demo</button>
-
-                            </div>
-                        </div>
-                    </div>
-					</div>
-
-
-                </div>
-                <div class = "col-md-4">
-					<div class = "proj-title">Mini Operating System</div>
-                    <div class = "container">
-						<div class = "portImg">
-							<img src = "images/portfolio/mini_os.png" class = "image" id = "portImg">
-							<div class = "overlay">
-								<div class = "otext">
-									141OS is a mini operating system that simulates file reading and writing. There is a 'fun-mode' which drives the creation of files via predefined inputs.
-									<br><button class = "proj" onclick="location.href = 'https://www.youtube.com/watch?v=5mNsKZ2D6Ms">Watch Demo</button>
-
-								</div>
-							</div>
-						</div>
-					</div>
-                </div>
-              <div class = "col-md-4">
-					<div class = "proj-title">ICS Domain Search Engine</div>
-                    <div class = "container">
-						<div class = "portImg">
-							<img src = "images/portfolio/search_engine.png" width="420" height="420">
-							<div class = "overlay">
-								<div class = "otext">
-									This project is the culmination of the Informational Retrieval course at UCI. Tackling the projects individually, I went above and beyond by creating a web application using Django and MongoDB. The website is hosted on AWS and be accessed below.
-									<button class = "proj" onclick="location.href = 'https://www.nicholaschow.me';">Visit Project</button>
-
-								</div>
-							</div>
-						</div>
-                    </div>
-                </div>
-            </div>
-            <!-- If it's just two, need some sort of centering and padding adjustments-->
-            <div class = "row">
-                <div class = "column">
-
-                </div>
-                <div class = "column">
-
-                </div>
-            </div>
-        </div>
+	
+	 		
+        
 	 </div>
   <!--[if IE]>
   <![endif]-->

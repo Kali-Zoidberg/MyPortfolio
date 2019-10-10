@@ -1,8 +1,4 @@
-body
-{
-    margin: 0;
-    background-color: #333333;
-}
+
 .row:after{
     content: "";
     display: table;
@@ -32,15 +28,18 @@ body
 	
 }
 
-.container .portImg img{
+.portImg img{
 	width: 93%;
 	height: 93%;
 }
-.container {
+.projectContainer {
 
     position: relative;
 }
-.container .portImg .overlay {
+.proj {
+	color: black;
+}
+.projectContainer .portImg .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -52,15 +51,15 @@ body
     transition: .5s ease;
     background-color: #008CBA;
 }
-.container:hover .overlay {
-    opacity: 0.5;
+.projectContainer:hover .overlay {
+    opacity: 0.7;
 
 }
 
-.container a:visited{
+.projectContainer a:visited{
 	color: #ffbd59;
 }
-.container .portImg .otext
+.projectContainer .portImg .otext
 {
     color: white;
     font-size: 20px;

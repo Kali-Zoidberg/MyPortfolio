@@ -20,14 +20,15 @@ body
 	font-size: 1.8em;
 	text-align: center;
 	color: black;
+	margin-bottom: 2%;
 }
-u {
+.indexTitle u {
 	text-decoration: none;
 	border-bottom: 4px solid red;
 
 }
 .alternateColor {
-	background-color: #fafbff;
+	background-color: #F0F1F5;
 }
 .aboutTxt {
 	
@@ -42,10 +43,13 @@ u {
 	overflow: hidden;
 }
 .myRow {
-	margin-bottom: 30%;
+	padding-bottom: 30%;
 }
-.myRow div[class^="col-sm-"] {
-	margin-top: 5%;
+
+
+div#project{
+
+	margin-bottom: 10%;
 }
 .pinkRectangle {
 	background-color: #fad9da;
@@ -90,9 +94,113 @@ u {
   padding-top: 6%;
 }
 
+.socialCol {
+	height: 100%;
+	background-color: #51C151;
+}
+
+.button-transparent {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
 .skills
 {
   font-size:0.9em;
   padding-left: 15%;
   text-align-all: center;
+}
+.topSkills {
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: 600;
+}
+
+span#yearExp {
+	margin-left: 3%;
+	background-color: #C15151;
+	font-size: 0.8em;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.proj-title
+{
+	text-align: center;
+	font-weight: 700;
+}
+.column {
+    float: left;
+    width: 30.33%;
+	padding-left: 3%;
+}
+.text
+{
+    padding-top: 4%;
+    font-family: "Baskerville Old Face";
+    font-size: 1.5em;
+    background-color: #3F3F3F;
+    color: #aaaaaa;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 100%;
+    height: 100%;
+	
+}
+
+.portImg img{
+	width: 80%;
+	height: 80%;
+	border: 5px solid #ddd;
+	border-radius: 4px;
+}
+.projectContainer {
+
+    position: relative;
+	margin-bottom: 5%;
+}
+.proj {
+	color: black;
+}
+.projectContainer .portImg .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	height: 100%;
+    width: 80%;
+    opacity: 0;
+    transition: .5s ease;
+		border-radius: 4px;
+
+    background-color: #008CBA;
+}
+.projectContainer:hover .overlay {
+    opacity: 0.7;
+
+}
+.proj-title {
+ 
+}
+.projectContainer a:visited{
+	color: #ffbd59;
+}
+.projectContainer .portImg .otext
+{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+	width: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
